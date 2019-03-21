@@ -1,0 +1,58 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assignment_3_CSS.css">
+</head>
+<body>
+<div class="navbar">
+	<ul>
+		<li><a href="C:\Users\Trevor\OneDrive\School\Web DB Development\Assignment 3/3_2.html">Question 3.2</a></li>
+		<li><a href="C:\Users\Trevor\OneDrive\School\Web DB Development\Assignment 3/3_3.html">Question 3.3</a></li>
+	</ul>
+</div>
+	<script src="3_1.js"></script>
+<h1>Form</h1>
+<form name="grades" method="post" action="" onsubmit="return gradeValidation()">
+	<table>
+		<tr>
+			<td>Quiz 1 (0-20)</td>
+			<td><input type="number" name="quizOne"></td>
+		</tr>
+		<tr>
+			<td>Quiz 2 (0-20)</td>
+			<td><input type="number" name="quizTwo"></td>
+		</tr>		
+		<tr>
+			<td>Assignment 1 (0-100)</td>
+			<td><input type="number" name="assignmentOne"/></td>
+        </tr>
+		<tr>
+			<td>Assignment 2 (0-100)</td>
+			<td><input type="number" name="assignmentTwo"/></td>
+        </tr>
+		<tr>
+			<td>Assignment 3 (0-100)</td>
+			<td><input type="number" name="assignmentThree"/></td>
+        </tr>
+		<tr>
+			<td>Midterm Exam (0-100)</td>
+			<td><input type="number" name="midtermExam"/></td>
+        </tr>
+
+		<tr>
+			<td>Final Exam (0-200)</td>
+			<td><input type="number" name="finalExam"/></td>
+        </tr>
+
+		<tr>
+			<td>Final Project (0-25)</td>
+			<td><input type="number" name="finalProject"/></td>
+        </tr>
+           
+		<tr>
+            <td><input type = "reset" name = "reset"  value = "Reset" /></td>
+			<td><input type="submit" value="Calculate Total" /></td>				
+        </tr>		
+	</table>
+</form>
+</body>
+</html>
