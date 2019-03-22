@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Exo+2|Hind+Madurai|Source+Serif+Pro|Varela+Round" rel="stylesheet">
+
 .navbar {
 	margin: 0;
 	padding: 0 0 30 0;}
@@ -61,3 +63,29 @@ input{
 	font-family: 'permanent marker', georgia,garamond,serif;
 	text-align:center;
 }
+.formbox {
+	margin-top: 60px;}
+	
+.formbox tr td{
+	font-family: 'Hind Madurai', sans-serif;
+	font-style: normal;
+	font-size: 1.5em;
+	color: #696969;}
+	
+.formbox select {
+	font-family: 'Hind Madurai', sans-serif;
+	font-style: italic;
+	font-size: .875em;
+	color: #696969;}
+	
+.formboxtable {
+	border: 1;
+	width: 800;
+	height: 600;
+	align: center;}	
+	
+.formbox textarea {
+	font-family: 'Hind Madurai', sans-serif;
+	font-style: italic;
+	font-size: .6em;
+	color: #696969;}
