@@ -2,58 +2,68 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assignmentThree.css">
-	<script type="text/javascript" src="assignmentThree.js"></script>
+	<script type="text/javascript" src="assignmentThree.js"
+<script>	
+	
+</script>
+	
 </head>
 <body>
 <div class="navbar">
 	<ul>
-		<li><a href="C:\Users\Trevor\OneDrive\School\Web DB Development\Assignment 3\assignmentThreeTwo.html">Question 3.2</a></li>
-		<li><a href="C:\Users\Trevor\OneDrive\School\Web DB Development\Assignment 3\assignmentThreeThree.html">Question 3.3</a></li>
+		<li><a href="assignmentThreeTwo.html">Question 3.2</a></li>
+		<li><a href="assignmentThreeThree.html">Question 3.3</a></li>
+		<li><a href="instructions.html">Instructions</a></li>
 	</ul>
 </div>
-<h1>Form</h1>
-<form name="grades" method="post" action="AssignmentThree.php" onsubmit="return gradeValidation()">
-	<table>
-		<tr>
-			<td>Quiz 1 (0-20)</td>
-			<td><input type="number" name="quizOne"></td>
-		</tr>
-		<tr>
-			<td>Quiz 2 (0-20)</td>
-			<td><input type="number" name="quizTwo"></td>
-		</tr>		
-		<tr>
-			<td>Assignment 1 (0-100)</td>
-			<td><input type="number" name="assignmentOne"/></td>
-        </tr>
-		<tr>
-			<td>Assignment 2 (0-100)</td>
-			<td><input type="number" name="assignmentTwo"/></td>
-        </tr>
-		<tr>
-			<td>Assignment 3 (0-100)</td>
-			<td><input type="number" name="assignmentThree"/></td>
-        </tr>
-		<tr>
-			<td>Midterm Exam (0-100)</td>
-			<td><input type="number" name="midtermExam"/></td>
-        </tr>
+<div class="main">
+	<div class="formbox">
+		<h1>Form</h1>
+		<h3>Enter Grades Below</h3>
+			<form name="grades" method="post" action="AssignmentThree.php" onsubmit="return gradeValidation()">
+				<table>
+					<tr>
+						<td>Quiz 1</td>
+						<td><input type="number" name="quizOne" placeholder="(0-20)"></td>
+					</tr>
+					<tr>
+						<td>Quiz 2</td>
+						<td><input type="number" name="quizTwo" placeholder="(0-20)"></td>
+					</tr>		
+					<tr>
+						<td>Assignment 1</td>
+						<td><input type="number" name="assignmentOne" placeholder="(0-100)"/></td>
+					</tr>
+					<tr>
+						<td>Assignment 2</td>
+						<td><input type="number" name="assignmentTwo" placeholder="(0-100)"/></td>
+					</tr>
+					<tr>
+						<td>Assignment 3</td>
+						<td><input type="number" name="assignmentThree" placeholder="(0-100)"/></td>
+					</tr>
+					<tr>
+						<td>Midterm Exam</td>
+						<td><input type="number" name="midtermExam" placeholder="(0-100)"/></td>
+					</tr>
 
-		<tr>
-			<td>Final Exam (0-200)</td>
-			<td><input type="number" name="finalExam"/></td>
-        </tr>
+					<tr>
+						<td>Final Exam</td>
+						<td><input type="number" name="finalExam" placeholder="(0-100)"/></td>
+					</tr>
 
-		<tr>
-			<td>Final Project (0-25)</td>
-			<td><input type="number" name="finalProject"/></td>
-        </tr>
-           
-		<tr>
-            <td><input type = "reset" name = "reset"  value = "Reset" /></td>
-			<td><input type="submit" value="Calculate Total" /></td>				
-        </tr>		
-	</table>
-</form>
+					<tr>
+						<td>Final Project</td>
+						<td><input type="number" name="finalProject" placeholder="(0-25)"/></td>
+					</tr>
+					   
+					<tr>
+						<td><input type="reset" name = "reset"  value = "Reset" /></td>
+						<td><input type="submit" value="Calculate Total" /></td>				
+					</tr>		
+				</table>
+			</form>
+	</div>
+</div>
 </body>
 </html>

@@ -1,12 +1,12 @@
 function gradeWeights() {
-	var q1 = 1*document.grades.quizOne.value;
-	var q2 = 1*document.grades.quizTwo.value;
-	var a1 = 1*document.grades.assignmentOne.value;
-	var a2 = 1*document.grades.assignmentTwo.value;
-	var a3 = 1*document.grades.assignmentThree.value;
-	var me = 1*document.grades.midtermExam.value;
-	var fe = 1*document.grades.finalExam.value;
-	var fp = 1*document.grades.finalProject.value;
+	var q1 = document.grades.quizOne.value;
+	var q2 = document.grades.quizTwo.value;
+	var a1 = document.grades.assignmentOne.value;
+	var a2 = document.grades.assignmentTwo.value;
+	var a3 = document.grades.assignmentThree.value;
+	var me = document.grades.midtermExam.value;
+	var fe = document.grades.finalExam.value;
+	var fp = document.grades.finalProject.value;
 	var grade = 0;
 	grade = ((q1/20)*0.05+(q2/20)*0.05+(a1/100)*0.05+(a2/100)*0.05+(a3/100)*0.05+(me/100)*0.1+(fe/200)*0.4+(fp/25)*0.25)*100;
 	
@@ -14,45 +14,45 @@ function gradeWeights() {
 }
 		
 function gradeValidation() {
-	var q1 = 1*document.grades.quizOne.value;
-	var q2 = 1*document.grades.quizTwo.value;
-	var a1 = 1*document.grades.assignmentOne.value;
-	var a2 = 1*document.grades.assignmentTwo.value;
-	var a3 = 1*document.grades.assignmentThree.value;
-	var me = 1*document.grades.midtermExam.value;
-	var fe = 1*document.grades.finalExam.value;
-	var fp = 1*document.grades.finalProject.value;
+	var q1 = document.grades.quizOne.value;
+	var q2 = document.grades.quizTwo.value;
+	var a1 = document.grades.assignmentOne.value;
+	var a2 = document.grades.assignmentTwo.value;
+	var a3 = document.grades.assignmentThree.value;
+	var me = document.grades.midtermExam.value;
+	var fe = document.grades.finalExam.value;
+	var fp = document.grades.finalProject.value;
 	
-	if (q1=="" || q1 < 0 || q1 > 20) {
-		alert("Input not valid (q1)");
+	if (isNaN(q1) || q1 < 0 || q1 > 20) {
+		alert("Input not valid (quiz 11111)");
 		document.grades.quizOne.focus();
 		return false;
 	} else if (q2=="" || q2 < 0 || q2 > 20) {
-		alert("Input not valid (q2)");
+		alert("Input not valid (quiz 2)");
 		document.grades.quizTwo.focus();
 		return false;
 	} else if (a1=="" || a1 < 0 || a1 > 100) {
-		alert("Input not valid (a1)");
+		alert("Input not valid (assignment 1)");
 		document.grades.assignmentOne.focus();
 		return false;
 	} else if (a2=="" || a2 < 0 || a2 > 100) {
-		alert("Input not valid (a2)");
+		alert("Input not valid (assignment 2)");
 		document.grades.assignmentTwo.focus();
 		return false;
 	} else if (a3=="" || a3 < 0 || a3 > 100) {
-		alert("Input not valid (a3)");
+		alert("Input not valid (assignment 3)");
 		document.grades.assignmentThree.focus();
 		return false;
 	} else if (me=="" || me < 0 || me > 100) {
-		alert("Input not valid (me)");
+		alert("Input not valid (Midterm Exam)");
 		document.grades.midtermExam.focus();
 		return false;
 	} else if (fe=="" || fe < 0 || fe > 200) {
-		alert("Input not valid (fe)");
+		alert("Input not valid (Final Exam)");
 		document.grades.finalExam.focus();
 		return false;
 	} else if (fp=="" || fp < 0 || fp > 25) {
-		alert("Input not valid (fe)");
+		alert("Input not valid (Final Project)");
 		document.grades.finalProject.focus();
 		return false;
 	} else {

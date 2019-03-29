@@ -2,7 +2,7 @@
 
 .navbar {
 	margin: 0;
-	padding: 0 0 30 0;}
+	padding: 0;}
 	
 .navbar ul {
 	list-style-type: none;
@@ -29,27 +29,21 @@
 	
 .navbar .active {
 	background-color: #C5B358;}
-
-ul {
-	list-style-type: none;
-	margin:0;
-	padding: 0;}
-	
-li a {
-	display: block;}
-
-	a:link {color: #000000}
-	a:visited {color: #006600}
-	a:hover {color: #FFCC00}
-	a:active {color: #FF00CC}
    
 body{
-	background-color: grey;
+	background-color: #e2e2e2;
+	background-image: linear-gradient(to bottom right, white, gray);
+	font-family: 'varela round', helvetica;
+	font-weight: normal;
+	color: #08357c;
+	text-align: left;
 }
 
-h3{
-	color: maroon;}
-	
+.main {
+	margin-top: 60px;
+
+}
+
 td{
 	font-size:14pt;
 	color:black;
@@ -63,29 +57,85 @@ input{
 	font-family: 'permanent marker', georgia,garamond,serif;
 	text-align:center;
 }
+
 .formbox {
-	margin-top: 60px;}
-	
+	max-width: 100%;
+	margin: auto;
+}
+
+.formbox table {
+
+	margin: auto;
+	padding: 1rem;
+}
+
 .formbox tr td{
+	text-align: right;	
 	font-family: 'Hind Madurai', sans-serif;
 	font-style: normal;
-	font-size: 1.5em;
-	color: #696969;}
-	
-.formbox select {
+	font-size: 1em;
+	color: maroon;
+}
+
+.divTwo select {
 	font-family: 'Hind Madurai', sans-serif;
 	font-style: italic;
 	font-size: .875em;
-	color: #696969;}
+	color: #696969;
+}
 	
 .formboxtable {
-	border: 1;
-	width: 800;
-	height: 600;
-	align: center;}	
+	width: 80%;
+	margin: auto;
+}	
 	
 .formbox textarea {
 	font-family: 'Hind Madurai', sans-serif;
 	font-style: italic;
 	font-size: .6em;
-	color: #696969;}
+	color: #696969;
+}
+
+.divTwo {
+	max-width: 100%;
+	margin: auto;
+}
+
+.divTwo h1, h3 {
+	color: maroon;
+	text-align: center;
+}
+
+.divTwo tr td {
+	text-align: center;
+	font-family: 'Hind Madurai', sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	color: maroon;
+}
+.divTwo input:hover {
+	outline: solid 3px red;
+}
+
+.divTwo form input:focus {
+	outline: solid 3px gold;
+}
+
+.divTwo input {
+	color: maroon;
+}
+
+.divTwo table {
+	width: 100px;
+	text-align: center;
+	margin: auto;
+	padding: 1rem;
+}
+
+h1 {
+	text-align: center;
+	color: maroon;
+}
+
+
+
